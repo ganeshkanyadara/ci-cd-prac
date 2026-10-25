@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  font-family: system-ui, sans-serif;
+  color: #252640;
+  background: #f3f4fb;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  padding: 32px;
+  border: 1px solid #e7e8f1;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 15px 50px #22224410;
+}
+
+.eyebrow {
+  color: #6c5ce7;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: clamp(28px, 6vw, 38px);
+}
+
+h1 span {
+  color: #6c5ce7;
+}
+
+.subtitle {
+  color: #777b90;
+  margin-bottom: 28px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 0;
+  padding: 13px;
+  border: 1px solid #dfe1eb;
+  border-radius: 10px;
+  font: inherit;
+}
+
+button {
+  padding: 12px 17px;
+  border: none;
+  border-radius: 10px;
+  background: #6c5ce7;
+  color: white;
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.88;
+}
+
+#message {
+  color: #bd3048;
+  font-size: 14px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 30px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eeeef4;
+  color: #767b91;
+  font-size: 12px;
+}
+
+#task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeef4;
+}
+
+.task-title {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.task-title.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete {
+  padding: 6px 11px;
+  background: #fff0f1;
+  color: #c52f47;
+}
+
+#empty {
+  padding: 22px 0;
+  text-align: center;
+  color: #85899c;
+}
+
+footer {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeef4;
+  color: #999;
+  text-align: center;
+  font-size: 12px;
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 22px 16px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}

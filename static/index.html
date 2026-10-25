@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">MY WORKSPACE</p>
+      <h1>Task Manager <span>✓</span></h1>
+      <p class="subtitle">Plan your day, one task at a time.</p>
+    </header>
+
+    <form id="task-form">
+      <input
+        id="task-input"
+        type="text"
+        placeholder="What do you need to do?"
+        maxlength="200"
+        required
+      >
+      <button type="submit">Add task</button>
+    </form>
+
+    <p id="message" role="status"></p>
+
+    <div class="summary">
+      <strong>YOUR TASKS</strong>
+      <span id="count">0 tasks</span>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <p id="empty">No tasks yet. Add your first task!</p>
+
+    <footer>Built with Python and FastAPI</footer>
+  </main>
+</body>
+</html>
